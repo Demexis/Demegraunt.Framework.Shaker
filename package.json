@@ -1,0 +1,23 @@
+﻿{
+  "name": "com.demegraunt.framework.shaker",
+  "author":
+  {
+    "name": "Devid Sorochinsky",
+    "url": "https://github.com/Demexis"
+  },
+  "displayName": "Demegraunt Framework Shaker",
+  "description": "Position shaker.",
+  "unity": "2022.2",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Demexis/Demegraunt.Framework.Shaker.git"
+  },
+  "keywords":
+  [
+    "demegraunt",
+    "framework",
+    "shaker",
+    "timeline"
+  ]
+}
