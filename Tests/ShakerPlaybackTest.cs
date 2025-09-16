@@ -1,11 +1,29 @@
 ﻿#if UNITY_EDITOR
-using Demegraunt.Framework.Utils;
 using NUnit.Framework;
+using System.Diagnostics.Contracts;
 using UnityEngine;
 
 namespace Demegraunt.Framework.Editor {
     [TestFixture]
     public sealed class ShakerPlaybackTest {
+        [Pure]
+        public static bool Approximately(float a, float b, float threshold = 0.001f) {
+            return Mathf.Abs(a - b) < threshold;
+        }
+
+        [Pure]
+        public static bool Approximately(Vector2 vecA, Vector2 vecB, float threshold = 0.001f) {
+            return Approximately(vecA.x, vecB.x, threshold)
+                && Approximately(vecA.y, vecB.y, threshold);
+        }
+
+        [Pure]
+        public static bool Approximately(Vector3 vecA, Vector3 vecB, float threshold = 0.001f) {
+            return Approximately(vecA.x, vecB.x, threshold)
+                && Approximately(vecA.y, vecB.y, threshold)
+                && Approximately(vecA.z, vecB.z, threshold);
+        }
+        
         [Test]
         public void ShakerSetsStartPosOnFinishTest() {
             const float shakeTime = 3f;
@@ -51,12 +69,12 @@ namespace Demegraunt.Framework.Editor {
                 Shaker.ShakeAlgorithm.AroundCenter, Shaker.ShakeDimension.TwoDimensional);
 
             shaker.Update(1);
-            Assert.IsTrue(MathUtils.Approximately(lastPos, startPos));
+            Assert.IsTrue(Approximately(lastPos, startPos));
 
             startPos = Vector3.one * 10;
             
             shaker.Update(1);
-            Assert.IsTrue(MathUtils.Approximately(lastPos, startPos));
+            Assert.IsTrue(Approximately(lastPos, startPos));
         }
     }
 }
