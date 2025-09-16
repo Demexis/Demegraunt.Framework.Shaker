@@ -45,5 +45,10 @@ Alternatively, open *Packages/manifest.json* and add the following to the depend
 
 Attach the `ShakerComponent` component to a game-object. Check the `bool ShakeAlways` or call `Shake(float time)` manually in code or via UnityEvent(-s).
 
+<img width="492" height="171" alt="shaker-component-preview" src="https://github.com/user-attachments/assets/0c1852f7-a6a4-4783-a461-cdfb87ec9fee" />
+
 ---
-Add `ShakeTrack` to your timeline. Set the "shaking transform". RMB, click *Create -> ShakeClip*, configure parameters.
+Add `ShakeTrack` to your timeline (*+ -> Demegraunt.Framework -> Shake Track*). Set the "shaking transform". RMB, click *Add Shake Clip*, configure parameters.
+
+<img width="584" height="190" alt="shake-track-preview" src="https://github.com/user-attachments/assets/c2b23794-f6d5-4bda-9c15-d436ed265a9d" />
+
