@@ -1,6 +1,6 @@
 ﻿[![GitHub Release](https://img.shields.io/github/v/release/Demexis/Demegraunt.Framework.Shaker.svg)](https://github.com/Demexis/Demegraunt.Framework.Shaker/releases/latest)
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-# Demegraunt.Framework.SpriteAnimations
+# Demegraunt.Framework.Shaker
 
 Position shaker. Contains ShakerTrack for Timeline package.
 
