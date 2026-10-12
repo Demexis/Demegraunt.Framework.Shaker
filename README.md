@@ -1,6 +1,6 @@
 ﻿[![GitHub Release](https://img.shields.io/github/v/release/Demexis/Demegraunt.Framework.Shaker.svg)](https://github.com/Demexis/Demegraunt.Framework.Shaker/releases/latest)
 [![MIT license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-# Demegraunt.Framework.SpriteAnimations
+# Demegraunt.Framework.Shaker
 
 Position shaker. Contains ShakerTrack for Timeline package.
 
@@ -52,3 +52,5 @@ Add `ShakeTrack` to your timeline (*+ -> Demegraunt.Framework -> Shake Track*). 
 
 <img width="584" height="190" alt="shake-track-preview" src="https://github.com/user-attachments/assets/c2b23794-f6d5-4bda-9c15-d436ed265a9d" />
 
+---
+Check `Shaker.cs` and `ShakerPlayback.cs`. You can use them in your custom systems and tools.
