@@ -56,14 +56,14 @@ namespace Demegraunt.Framework {
 
         public void Shake(float time) {
             shakerPlayback?.Reset();
-            var startPos = transform.position;
+            var startPos = transform.localPosition;
             shakerPlayback = new ShakerPlayback(() => startPos, shakePos => {
                 switch (ComponentType) {
                     case ShakeComponentType.Transform:
-                        transform.position = shakePos;
+                        transform.localPosition = shakePos;
                         break;
                     case ShakeComponentType.Rigidbody2D:
-                        rb2D.MovePosition(shakePos);
+                        rb2D.MovePosition(startPos + shakePos);
                         break;
                     default:
                         throw new ArgumentOutOfRangeException();
